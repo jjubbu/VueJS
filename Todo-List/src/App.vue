@@ -1,5 +1,5 @@
 <script setup>
-import TodoBoxTitle from "./elements/TodoBoxTitle.vue";
+import TodoBoxTitle from "./components/elements/TodoBoxTitle.vue";
 import TodoBox from "./components/TodoBox.vue";
 </script>
 

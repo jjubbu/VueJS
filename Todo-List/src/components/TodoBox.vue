@@ -2,7 +2,7 @@
 import { ref } from "@vue/reactivity";
 import TodoCard from "./TodoCard.vue";
 import TodoInputBox from "./TodoInputBox.vue";
-import TodoCardButton from "../elements/TodoCardButton.vue";
+import TodoCardButton from "./elements/TodoCardButton.vue";
 
 let id = 0;
 const todoData = ref([

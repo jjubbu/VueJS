@@ -1,7 +1,7 @@
 <script setup>
-import TodoCardButton from "../elements/TodoCardButton.vue";
-import TodoInput from "../elements/TodoInput.vue";
-import TodoCardTitle from "../elements/TodoCardTitle.vue";
+import TodoCardButton from "./elements/TodoCardButton.vue";
+import TodoInput from "./elements/TodoInput.vue";
+import TodoCardTitle from "./elements/TodoCardTitle.vue";
 </script>
 <template>
     <section class="todo-input-box">

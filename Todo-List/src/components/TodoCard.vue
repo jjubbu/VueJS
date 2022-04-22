@@ -1,7 +1,7 @@
 <script setup>
-import TodoCardTitle from "../elements/TodoCardTitle.vue";
-import TodoCardComment from "../elements/TodoCardComment.vue";
-import TodoCardButton from "../elements/TodoCardButton.vue";
+import TodoCardTitle from "./elements/TodoCardTitle.vue";
+import TodoCardComment from "./elements/TodoCardComment.vue";
+import TodoCardButton from "./elements/TodoCardButton.vue";
 
 const props = defineProps({ data: Object });
 </script>
