@@ -1,15 +1,5 @@
 # Todo-List
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
 ## Project Setup
 
 ```sh
@@ -27,3 +17,21 @@ npm run dev
 ```sh
 npm run build
 ```
+
+<br>
+
+---
+
+## Vue 연습용 Todo list
+
+-   vue cli
+-   vuex
+
+### 기능
+
+1. 할 일 목록 띄우기
+2. 할 일 추가하기
+3. 할 일 수정하기
+4. 할 일 삭제하기
+5. firebast/aws s3로 연결하기
+6. (가능하다면?) 로그인 기능
