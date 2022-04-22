@@ -1,15 +1,17 @@
 <script setup>
 import TodoCardButton from "../elements/TodoCardButton.vue";
+import TodoInput from "../elements/TodoInput.vue";
+import TodoCardTitle from "../elements/TodoCardTitle.vue";
 </script>
 <template>
     <section class="todo-input-box">
         <label>
-            <h1>title</h1>
-            <input />
+            <TodoCardTitle>title</TodoCardTitle>
+            <TodoInput />
         </label>
         <label>
-            <h1>comment</h1>
-            <input />
+            <TodoCardTitle>comment</TodoCardTitle>
+            <TodoInput />
         </label>
         <TodoCardButton class="todo-item-add-button"
             >Add Todo Card</TodoCardButton
