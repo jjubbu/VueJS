@@ -1,5 +1,13 @@
-<script setup></script>
+<script setup>
+import TodoBoxTitle from "./elements/TodoBoxTitle.vue";
+import TodoBox from "./components/TodoBox.vue";
+</script>
 
-<template></template>
+<template>
+    <TodoBoxTitle>Todo List with Vue</TodoBoxTitle>
+    <TodoBox />
+</template>
 
-<style></style>
+<style>
+@import url(./assets/reset.css);
+</style>
