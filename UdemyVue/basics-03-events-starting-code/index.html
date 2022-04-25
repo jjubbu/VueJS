@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vue Basics</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://unpkg.com/vue@next" defer></script>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Vue Events</h1>
+        </header>
+        <section id="events">
+            <h2>Events in Action</h2>
+            <button v-on:click="addCount">Add</button>
+            <button v-on:click="removeCount">Remove</button>
+            <p>Result: {{ counter }}</p>
+            <div>
+                <label>
+                    <input type="text" v-model="inputValue" />
+                    <p>what I'm typed : {{inputValue}}</p>
+                </label>
+            </div>
+            <!-- //* submitForm 함수 내에서 preventDefault 를  -->
+            <form v-on:submit.prevent="submitForm">
+                <h1>form test</h1>
+                <input type="text" />
+                <button>sign up</button>
+            </form>
+        </section>
+    </body>
+</html>
