@@ -1,37 +1,29 @@
-# Todo-List
+# todo-list
 
-## Project Setup
-
-```sh
-npm install
+## Project setup
+```
+yarn install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+### Compiles and hot-reloads for development
+```
+yarn serve
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
+### Compiles and minifies for production
+```
+yarn build
 ```
 
-<br>
+### Run your end-to-end tests
+```
+yarn test:e2e
+```
 
----
+### Lints and fixes files
+```
+yarn lint
+```
 
-## Vue 연습용 Todo list
-
--   vue cli
--   vuex
-
-### 기능
-
-1. 할 일 목록 띄우기
-2. 할 일 추가하기
-3. 할 일 수정하기
-4. 할 일 삭제하기
-5. firebast/aws s3로 연결하기
-6. (가능하다면?) 로그인 기능
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
