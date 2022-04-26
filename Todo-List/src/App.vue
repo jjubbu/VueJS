@@ -1,13 +1,26 @@
-<script setup>
-import TodoBoxTitle from "./components/elements/TodoBoxTitle.vue";
-import TodoBox from "./components/TodoBox.vue";
-</script>
-
 <template>
-    <TodoBoxTitle>Todo List with Vue</TodoBoxTitle>
-    <TodoBox />
+  <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
-<style>
-@import url(./assets/reset.css);
+<script>
+import HelloWorld from "./components/HelloWorld.vue";
+
+export default {
+  name: "App",
+  components: {
+    HelloWorld,
+  },
+};
+</script>
+
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
