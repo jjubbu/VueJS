@@ -1,7 +1,7 @@
 <template>
   <section class="todo-card">
-    <h3>title</h3>
-    <p>comment</p>
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.comment }}</p>
     <button>edit</button>
     <button>delete</button>
   </section>
@@ -9,6 +9,9 @@
 <script>
 export default {
   name: "TodoCard",
+  props: {
+    item: Object,
+  },
 };
 </script>
 <style lang="sass"></style>
