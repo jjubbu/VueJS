@@ -18,23 +18,11 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button v-on:click="addCount">Add</button>
-      <button v-on:click="removeCount">Remove</button>
-      <!-- //* v-once 는 첫번째 들어온 값만 출력하고 변화하지 않는다. -->
-      <p v-once>Start: {{ counter }}</p>
+      <button v-on:click="add(10)">Add 10</button>
+      <button v-on:click="reduce(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
-      <div>
-        <label>
-          <input type="text" v-model="inputValue" />
-          <p>what I'm typed : {{submitValut}}</p>
-        </label>
-      </div>
-      <!-- //* submitForm 함수 내에서 preventDefault 를  -->
-      <form v-on:submit.prevent="submitForm">
-        <h1>form test</h1>
-        <input type="text" v-model="submitValut" />
-        <button>sign up</button>
-      </form>
+      <input type="text" v-on:input="setName($event, 'Schwarzmüller')">
+      <p>Your Name: {{ name }}</p>
     </section>
   </body>
 </html>
