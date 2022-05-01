@@ -1,6 +1,6 @@
 <template>
   <section>
-    <button-element>close</button-element>
+    <button-element @click="props.closeCard">close</button-element>
     <input-element title="title"></input-element>
     <input-element title="comment"></input-element>
     <button-element>save</button-element>
@@ -13,4 +13,10 @@ export default {
   components: { InputElement, ButtonElement },
   name: "AddCard",
 };
+</script>
+<script setup>
+import { defineProps } from "vue";
+const props = defineProps({
+  closeCard: Function,
+});
 </script>

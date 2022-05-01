@@ -1,8 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <todo-main></todo-main>
-  <button-element @click="showCard">Add card</button-element>
-  <add-card v-if="addCard"></add-card>
+  <button-element @click="showCard" v-if="!addCard">Add card</button-element>
+  <add-card v-if="addCard" :closeCard="showCard"></add-card>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
 import { ref } from "vue";
 const addCard = ref(false);
 const showCard = () => {
-  addCard.value = true;
+  addCard.value = !addCard.value;
 };
 </script>
 
