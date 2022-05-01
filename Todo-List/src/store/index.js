@@ -25,7 +25,24 @@ export default createStore({
     ],
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    addItem(state, object) {
+      let item = {
+        id: state.todoList.length,
+        ...object,
+      };
+      state.todoList.push(item);
+    },
+    removeItem(state, id) {
+      state.todoList = state.todoList.filter((x) => id !== x);
+    },
+    editItem(state, object) {
+      state.todoList[object.id - 1] = object;
+    },
+    doneItem(state, id) {
+      state.todoList[id - 1].done = !state.todoList[id - 1].done;
+    },
+  },
   actions: {},
   modules: {},
 });
