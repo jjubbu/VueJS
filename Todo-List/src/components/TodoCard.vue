@@ -1,7 +1,7 @@
 <template>
   <section class="todo-card">
-    <h3>{{ item.title }}</h3>
-    <p>{{ item.comment }}</p>
+    <h3>{{ props.item.title }}</h3>
+    <p>{{ props.item.comment }}</p>
     <button-element>edit</button-element>
     <button-element>remove</button-element>
   </section>
@@ -11,9 +11,13 @@ import ButtonElement from "./ButtonElement.vue";
 export default {
   components: { ButtonElement },
   name: "TodoCard",
-  props: {
-    item: Object,
-  },
 };
 </script>
+<script setup>
+import { defineProps } from "vue";
+const props = defineProps({
+  item: Object,
+});
+</script>
+
 <style lang="sass"></style>

@@ -1,11 +1,14 @@
 <template>
-  <button @click="clickEvent"><slot /></button>
+  <button @click="props.clickEvent"><slot /></button>
 </template>
 <script>
 export default {
   name: "ButtonElement",
-  props: {
-    clickEvent: Function,
-  },
 };
+</script>
+<script setup>
+import { defineProps } from "vue";
+const props = defineProps({
+  clickEvent: Function,
+});
 </script>

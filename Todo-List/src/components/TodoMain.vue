@@ -11,11 +11,12 @@ import TodoCard from "./TodoCard.vue";
 export default {
   name: "TodoMain",
   components: { TodoCard },
-  computed: {
-    getCardList() {
-      return this.$store.state.todoList;
-    },
-  },
 };
+</script>
+<script setup>
+import { useStore } from "vuex";
+
+const store = useStore();
+const getCardList = store.state.todoList;
 </script>
 <style scoped></style>
