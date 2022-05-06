@@ -14,9 +14,10 @@ export default {
 };
 </script>
 <script setup>
+import { computed } from "vue";
 import { useStore } from "vuex";
 
 const store = useStore();
-const getCardList = store.state.todoList;
+const getCardList = computed(() => store.state.todoList);
 </script>
 <style scoped></style>

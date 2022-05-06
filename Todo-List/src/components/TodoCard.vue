@@ -3,7 +3,7 @@
     <h3>{{ props.item.title }}</h3>
     <p>{{ props.item.comment }}</p>
     <button-element>edit</button-element>
-    <button-element>remove</button-element>
+    <button-element @click="removeItem">remove</button-element>
   </section>
 </template>
 <script>
@@ -15,9 +15,16 @@ export default {
 </script>
 <script setup>
 import { defineProps } from "vue";
+import { useStore } from "vuex";
 const props = defineProps({
   item: Object,
 });
+
+const store = useStore();
+
+const removeItem = () => {
+  store.commit("removeItem", props.item.id);
+};
 </script>
 
 <style lang="sass"></style>
