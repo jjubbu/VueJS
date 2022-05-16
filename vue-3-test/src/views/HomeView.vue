@@ -3,7 +3,10 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <section class="box">
       <setup-function></setup-function>
-      <script-setup></script-setup>
+      <script-setup>
+        <div>this is slot</div>
+        <p>slots!</p>
+      </script-setup>
     </section>
   </div>
 </template>
@@ -17,9 +20,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .box {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+:global(.hi) {
+  color: blue;
 }
 </style>
