@@ -26,6 +26,7 @@ const childData = ref("");
     <Maping />
     <Inputs />
     <WatchID />
+    테스트
 </template>
 
 <style>
